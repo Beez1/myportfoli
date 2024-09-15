@@ -1,2 +1,33 @@
 <app-nav></app-nav>
-<p>about works!</p>
+<div class="about-container">
+  <header class="intro">
+    <h1>{{ name }}</h1>
+    <h2>{{ role }}</h2>
+    <h3>{{ location }}</h3>
+  </header>
+
+  <main>
+    <section class="about">
+      <h2>About Me</h2>
+      <p>{{ aboutText }}</p>
+    </section>
+
+    <section class="education">
+      <h2>Education</h2>
+      <ul class="education-list">
+        <li class="education-item" *ngFor="let edu of education">
+          <h3>{{ edu.school }}</h3>
+          <p class="degree">{{ edu.degree }}</p>
+          <p class="graduation-date">Expected Graduation: {{ edu.expectedGrad }}</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="fun-facts">
+      <h2>Fun Facts</h2>
+      <ul class="fun-facts-list">
+        <li *ngFor="let fact of funFacts">{{ fact }}</li>
+      </ul>
+    </section>
+  </main>
+</div>

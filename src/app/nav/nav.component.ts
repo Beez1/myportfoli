@@ -11,6 +11,9 @@ import { RouterModule } from '@angular/router';
   styleUrl: './nav.component.css'
 })
 export class NavComponent {
-
+  socialLinks = [
+    { text: 'Email', url: 'mailto:your-email@example.com', label: 'Email' },
+    { text: 'LinkedIn', url: 'https://www.linkedin.com/in/your-linkedin-profile', label: 'LinkedIn' },
+    { text: 'GitHub', url: 'https://github.com/Beez1', label: 'GitHub' }
+  ];
 }
-

@@ -1,2 +1,11 @@
 <app-nav></app-nav>
-<p>contact works!</p>
+<div class="contact-container">
+  <h1>Contact Me</h1>
+  <div class="button-container">
+    <ng-container *ngFor="let contact of contactMethods">
+      <a [href]="contact.link" class="contact-button">
+        <span class="icon">{{ contact.icon }}</span> {{ contact.label }}
+      </a>
+    </ng-container>
+  </div>
+</div>

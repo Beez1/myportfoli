@@ -12,4 +12,10 @@ import { NavComponent } from '../nav/nav.component';
 })
 export class ContactComponent {
 
+  contactMethods = [
+    { label: 'Email Me', link: 'mailto:emmabassey50@gmail.com', icon: '📧' },
+    { label: 'LinkedIn', link: 'http://www.linkedin.com/in/emmanuel-godwin-bassey-1b33b6265', icon: '🔗' },
+    { label: 'GitHub', link: 'https://github.com/Beez1', icon: '💻' },
+    { label: 'Call Me', link: 'tel:+353830024454', icon: '📞' }
+  ];
 }

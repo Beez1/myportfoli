@@ -15,21 +15,22 @@ export class PortfolioComponent implements OnInit {
     {
       category: 'Languages',
       items: [
-        { name: 'HTML', proficiency: 90 },
+        { name: 'HTML', proficiency: 95 },
         { name: 'CSS', proficiency: 85 },
         { name: 'JavaScript', proficiency: 80 },
-        { name: 'Python', proficiency: 75 },
+        { name: 'Python', proficiency: 70 },
         { name: 'TypeScript', proficiency: 85 },
         { name: 'Java', proficiency: 70 },
         { name: 'SQL', proficiency: 75 },
-        { name: 'PHP', proficiency: 70 }
+        { name: 'PHP', proficiency: 65 },
+        { name: 'Kotlin', proficiency: 5 }
       ]
     },
     {
       category: 'Frameworks',
       items: [
         { name: 'Angular', proficiency: 80 },
-        { name: 'React', proficiency: 75 },
+        { name: 'React', proficiency: 10 },
         { name: 'PyQt6', proficiency: 65 },
         { name: 'Express.js', proficiency: 70 },
         { name: 'Bootstrap', proficiency: 80 }
@@ -38,13 +39,14 @@ export class PortfolioComponent implements OnInit {
     {
       category: 'Tools',
       items: [
-        { name: 'Node.js', proficiency: 85 },
+        { name: 'Node.js', proficiency: 75 },
         { name: 'MongoDB', proficiency: 80 },
         { name: 'Xampp Server', proficiency: 75 },
-        { name: 'Postman', proficiency: 80 },
+        { name: 'Postman', proficiency: 95 },
         { name: 'Git & GitHub', proficiency: 90 },
         { name: 'Wordpress', proficiency: 70 },
-        { name: 'Vercel', proficiency: 85 }
+        { name: 'Vercel', proficiency: 65 },
+        { name: 'Localwp', proficiency: 75 }
       ]
     },
     {
@@ -52,7 +54,7 @@ export class PortfolioComponent implements OnInit {
       items: [
         { name: 'Visual Studio Code', proficiency: 90 },
         { name: 'Stack Blitz', proficiency: 75 },
-        { name: 'GitHub Codespaces', proficiency: 80 }
+        { name: 'GitHub Codespaces', proficiency: 90 }
       ]
     }
   ];

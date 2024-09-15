@@ -10,59 +10,59 @@ import { NavComponent } from '../nav/nav.component';
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
-export class HomeComponent  {
+export class HomeComponent implements OnInit {
+  
   texts: string[] = [
-    '',  // This will hold the dynamic greeting based on timezone
+    '',  // Placeholder for dynamic greeting based on timezone
     'My name is Emmanuel and I am a software developer.',
     'Welcome to my portfolio!',
-    'Check out my portfolio below.'
+    'Check it out below'
   ];
   displayedText: string = '';
   currentTextIndex: number = 0;
   charIndex: number = 0;
+  showPortfolioButton: boolean = false; // Flag to show the portfolio button
 
   ngOnInit(): void {
-    // Greet the user based on the current timezone
-    this.texts[0] = this.getGreeting();
+    this.texts[0] = this.getGreeting();  // Greet the user based on timezone
     this.startTypewriter();
   }
 
-  // Function to get a greeting based on timezone
+  // Function to get a greeting based on the user's timezone
   getGreeting(): string {
     const currentHour = new Date().getHours();
     if (currentHour < 12) {
       return 'Good morning!';
-    } else if (currentHour < 16) {
+    } else if (currentHour < 18) {
       return 'Good afternoon!';
     } else {
       return 'Good evening!';
     }
   }
 
-  // Function to implement typewriter effect
+  // Typewriter effect logic
   startTypewriter() {
     if (this.charIndex < this.texts[this.currentTextIndex].length) {
       this.displayedText += this.texts[this.currentTextIndex].charAt(this.charIndex);
       this.charIndex++;
       setTimeout(() => {
         this.startTypewriter();
-      }, 100); // Adjust the speed of the typewriter effect
+      }, 100); // Adjust speed
     } else {
-      // Move to the next text after the current one is fully displayed
       setTimeout(() => {
         this.moveToNextText();
-      }, 1000); // Wait for 1 second before moving to the next text
+      }, 1000);
     }
   }
 
-  // Function to reset and move to the next text
   moveToNextText() {
-    if (this.currentTextIndex < this.texts.length - 1) {
-      this.currentTextIndex++;
+    this.currentTextIndex++;
+    if (this.currentTextIndex < this.texts.length) {
       this.charIndex = 0;
-      this.displayedText = '';  // Reset displayedText for the new sentence
-      this.startTypewriter();   // Start typing the next text
+      this.displayedText = '';
+      this.startTypewriter();
+    } else {
+      this.showPortfolioButton = true;
     }
   }
-
 }

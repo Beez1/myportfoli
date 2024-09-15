@@ -1,3 +1,60 @@
 <app-nav></app-nav>
-<p>portfolio works!</p>
+<div class="portfolio">
+  <section class="skills">
+    <h2>Skills</h2>
+    <div class="skills-list">
+      <div *ngFor="let skillCategory of skills" class="skill-category">
+        <h3>{{ skillCategory.category }}</h3>
+        <div *ngFor="let skill of skillCategory.items" class="skill-item">
+          <h4>{{ skill.name }}</h4>
+          <div class="progress-bar">
+            <div class="progress" [style.width]="skill.proficiency + '%'"></div>
+          </div>
+          <p>{{ skill.proficiency }}% proficiency</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="projects">
+    <h2>Projects</h2>
+    <div class="gallery">
+      <div class="gallery-item">
+        <h3>Memetorium - Image Cloud Platform</h3>
+        <iframe src="https://memetorium.vercel.app" class="project-embed" frameborder="0" allowfullscreen></iframe>
+        <ul>
+          <li>Image cloud</li>
+          <li>MEAN Stack</li>
+        </ul>
+      </div>
+  
+      <div class="gallery-item">
+        <h3>EFC - Eagles FC Website</h3>
+        <iframe src="https://efcwebsite.vercel.app" class="project-embed" frameborder="0" allowfullscreen></iframe>
+        <ul>
+          <li>Sports team website</li>
+          <li>MEAN Stack</li>
+        </ul>
+      </div>
+  
+      <div class="gallery-item">
+        <h3>Blog Made with Angular</h3>
+        <iframe src="https://blogmadewithangular.vercel.app" class="project-embed" frameborder="0" allowfullscreen></iframe>
+        <ul>
+          <li>Blogging platform</li>
+          <li>Angular, Node.js, MongoDB</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
+  <section class="certificates">
+    <h2>Certificates</h2>
+    <div class="gallery">
+      <div class="gallery-item">
+        <h3>Foundations: Computer Networks || <a href="#">LINK</a></h3>
+        <p>January 2024</p>
+      </div>
+    </div>
+  </section>
+</div>

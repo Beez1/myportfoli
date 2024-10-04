@@ -23,14 +23,14 @@ export class PortfolioComponent implements OnInit {
         { name: 'Java', proficiency: 70 },
         { name: 'SQL', proficiency: 75 },
         { name: 'PHP', proficiency: 65 },
-        { name: 'Kotlin', proficiency: 5 }
+        { name: 'Kotlin', proficiency: 35 }
       ]
     },
     {
       category: 'Frameworks',
       items: [
         { name: 'Angular', proficiency: 80 },
-        { name: 'React', proficiency: 10 },
+        { name: 'React', proficiency: 60 },
         { name: 'PyQt6', proficiency: 65 },
         { name: 'Express.js', proficiency: 70 },
         { name: 'Bootstrap', proficiency: 80 }
@@ -45,7 +45,8 @@ export class PortfolioComponent implements OnInit {
         { name: 'Postman', proficiency: 95 },
         { name: 'Git & GitHub', proficiency: 90 },
         { name: 'Wordpress', proficiency: 70 },
-        { name: 'Vercel', proficiency: 65 },
+        { name: 'Webflow', proficiency: 50 },
+        { name: 'Vercel', proficiency: 75 },
         { name: 'Localwp', proficiency: 75 }
       ]
     },
@@ -92,7 +93,7 @@ export class PortfolioComponent implements OnInit {
   certificates = [
     {
       title: 'Foundations: Computer Networks',
-      link: '#',
+      link: 'https://www.dropbox.com/scl/fi/0jjfttev1rpi77l7l5wot/EMMANUEL-GODWIN-BASSEY_731159-1.pdf?rlkey=n8dhtu4mcqhiu0bzq1i23wu4f&st=4y48tk6h&dl=0',
       date: 'January 2024'
     }
   ];
@@ -100,6 +101,6 @@ export class PortfolioComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    // Initialization logic if needed
+ 
   }
 }

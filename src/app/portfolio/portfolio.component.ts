@@ -23,8 +23,8 @@ export class PortfolioComponent implements OnInit {
         { name: 'Java', proficiency: 70 },
         { name: 'SQL', proficiency: 75 },
         { name: 'PHP', proficiency: 65 },
-        { name: 'Kotlin', proficiency: 35 }
-        { name: 'C++', proficiency: 20 }
+        { name: 'Kotlin', proficiency: 35 },
+        { name: 'C++', proficiency: 30 },
         { name: 'GO (GOLANG)', proficiency: 40 }
       ]
     },

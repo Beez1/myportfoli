@@ -24,6 +24,8 @@ export class PortfolioComponent implements OnInit {
         { name: 'SQL', proficiency: 75 },
         { name: 'PHP', proficiency: 65 },
         { name: 'Kotlin', proficiency: 35 }
+        { name: 'C++', proficiency: 20 }
+        { name: 'GO (GOLANG)', proficiency: 40 }
       ]
     },
     {
@@ -33,7 +35,9 @@ export class PortfolioComponent implements OnInit {
         { name: 'React', proficiency: 60 },
         { name: 'PyQt6', proficiency: 65 },
         { name: 'Express.js', proficiency: 70 },
-        { name: 'Bootstrap', proficiency: 80 }
+        { name: 'Bootstrap', proficiency: 80 },
+        { name: 'Open MPI', proficiency: 20 }
+
       ]
     },
     {
@@ -43,6 +47,7 @@ export class PortfolioComponent implements OnInit {
         { name: 'MongoDB', proficiency: 80 },
         { name: 'Xampp Server', proficiency: 75 },
         { name: 'Postman', proficiency: 95 },
+        { name: 'Postgre SQL', proficiency: 80 },
         { name: 'Git & GitHub', proficiency: 90 },
         { name: 'Wordpress', proficiency: 70 },
         { name: 'Webflow', proficiency: 50 },

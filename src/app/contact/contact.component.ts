@@ -14,7 +14,7 @@ export class ContactComponent {
 
   contactMethods = [
     { label: 'Email Me', link: 'mailto:emmabassey50@gmail.com', icon: '📧' },
-    { label: 'LinkedIn', link: 'http://www.linkedin.com/in/emmanuel-godwin-bassey-1b33b6265', icon: '🔗' },
+    { label: 'LinkedIn', link: 'https://www.linkedin.com/in/emmanuel-bassey-1b33b6265?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app', icon: '🔗' },
     { label: 'GitHub', link: 'https://github.com/Beez1', icon: '💻' },
     { label: 'Call Me', link: 'tel:+353830024454', icon: '📞' }
   ];
